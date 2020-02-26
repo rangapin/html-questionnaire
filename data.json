@@ -1,0 +1,31 @@
+[
+	{
+		"question": "La norme HTML5 ne nécessite pas de guillemets autour des valeurs d'attribut.",
+		"reponse": true,
+		"argument": "L'utilisation de guillemets est courante. L'omission de guillemets peut produire des erreurs."
+	},
+
+	{
+		"question": "L'élément &lt;div&gt; est un élément non sémantique.",
+		"reponse": true,
+		"argument": "L’élément <div> n’indique rien sur son contenu."
+	},
+
+	{
+		"question": "Les éléments en ligne sont normalement affichés sans commencer une nouvelle ligne.",
+		"reponse": true,
+		"argument": "Un élément en ligne ne démarre pas sur une nouvelle ligne et ne prend que la largeur nécessaire."
+	},
+
+	{
+		"question": "Un &lt;iframe&gt; est utilisé pour afficher une page Web dans une page Web.",
+		"reponse": true,
+		"argument": "Un <iframe> est utilisé pour incorporer un autre document dans le document HTML actuel."
+	},
+
+	{
+		"question": "Les commentaires HTML commencent par <- et se terminent par ->",
+		"reponse": false,
+		"argument": "Les commentaires HTML commencent par <! - et se terminent par ->"
+	}
+]

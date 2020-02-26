@@ -1,0 +1,26 @@
+* {
+	background-color: white;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+form {
+	padding: 44px;
+}
+
+ input {
+ 	padding: 8px;
+ 	margin: 24px;
+ 	border-radius: 14px;
+ 	color: white;
+ 	background-color: seagreen;
+ }
+
+#btn {
+	position: relative;
+	left: 5em;
+}
+
