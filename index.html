@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -439,16 +439,469 @@
 		 
 		// xhr_object.send(null); 
 
-			function finalResult() {
-			let finalScore = 0;
-			let correctResult = [true, true, true, true, false];
-			let playerAnswer = document.getElementsByClassName("sp");
-			for (i = 0; i <= questionnaire.length; i++) {
-  			if (playerAnswer[0] === questionnaire[0].reponse);
-			  console.log(questionnaire[0].argument);
-			}
-			};
-			finalResult();
+			// function finalResult() {
+			// let finalScore = 0;
+			// let correctResult = [true, true, true, true, false];
+			// let playerAnswer = document.getElementsByClassName("sp");
+			// for (i = 0; i <= questionnaire.length; i++) {
+  			// if (playerAnswer[0] === questionnaire[0].reponse);
+			//   console.log(questionnaire[0].argument);
+			// }
+			// };
+			// finalResult();
+</script>
+</body>
+</html> html>
+<html lang="en">
+
+<head>
+	<title>QCD</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<!-- <div class="container-fluid">
+<h1>HMTL Questionnaire</h1>
+ 		<form>
+ 			<div>
+ 				<p id="question-one"></p>
+ 				<input type="radio" id="true" name="question-one" value="vrai">
+ 				<label for="true">Vrai</label><br>
+ 
+ 				<input type="radio" id="false" name="question-one" value="faux">
+ 				<label for="false">Faux</label><br>
+ 			</div>
+ 			<div>
+ 				<p id="question-two"></p>
+ 				<input type="radio" id="true" name="question-two" value="vrai">
+ 				<label for="true">Vrai</label><br>
+ 
+ 				<input type="radio" id="false" name="question-two" value="faux">
+ 				<label for="false">Faux</label><br>
+ 			</div>
+ 			<div>
+ 				<p id="question-three"></p>
+ 				<input type="radio" id="true" name="question-three" value="vrai">
+ 				<label for="true">Vrai</label><br>
+ 
+ 				<input type="radio" id="false" name="question-three" value="faux">
+ 				<label for="false">Faux</label><br>
+ 			</div>
+ 			<div>
+ 				<p id="question-four"></p>
+ 				<input type="radio" id="true" name="question-four" value="vrai">
+ 				<label for="true">Vrai</label><br>
+ 
+ 				<input type="radio" id="false" name="question-four" value="faux">
+ 				<label for="false">Faux</label><br>
+ 			</div>
+ 			<div>
+ 				<p id="question-five"></p>
+ 				<input type="radio" id="male" name="question-five" value="vrai">
+ 				<label for="true">Vrai</label><br>
+ 
+ 				<input type="radio" id="false" name="question-five" value="faux">
+ 				<label for="false">Faux</label><br>
+ 				<br>
+ 			</div> -->
+<!--  			<input type="submit" class="btn btn-success" value="Submit">
+ </form>-->
+</div>
+
+	<script>
+
+		questionnaire =	[
+		{
+			"question": "La norme HTML5 ne nécessite pas de guillemets autour des valeurs d'attribut.",
+			"reponse": true,
+			"argument": "L'utilisation de guillemets est courante. L'omission de guillemets peut produire des erreurs."
+		},
+
+		{
+			"question": "L'élément &lt;div&gt; est un élément non sémantique.",
+			"reponse": true,
+			"argument": "L’élément <div> n’indique rien sur son contenu."
+		},
+
+		{
+			"question": "Les éléments en ligne sont normalement affichés sans commencer une nouvelle ligne.",
+			"reponse": true,
+			"argument": "Un élément en ligne ne démarre pas sur une nouvelle ligne et ne prend que la largeur nécessaire."
+		},
+
+		{
+			"question": "Un &lt;iframe&gt; est utilisé pour afficher une page Web dans une page Web.",
+			"reponse": true,
+			"argument": "Un <iframe> est utilisé pour incorporer un autre document dans le document HTML actuel."
+		},
+
+		{
+			"question": "Les commentaires HTML commencent par <- et se terminent par ->",
+			"reponse": false,
+			"argument": "Les commentaires HTML commencent par <! - et se terminent par ->"
+		}
+		];
+
+
+		let newForm = document.createElement('form');
+		let newTitle = document.createElement('h1');
+		let newFoot = document.createElement('footer');
+
+		let newElement0 = document.createElement('div');
+		let newElement1 = document.createElement('div');
+		let newElement2 = document.createElement('div');
+		let newElement3 = document.createElement('div');
+		let newElement4 = document.createElement('div');
+		let newElement5 = document.createElement('div');
+		let newElement6 = document.createElement('div');
+		let newElement7 = document.createElement('div');
+		let newElement8 = document.createElement('div');
+		let newElement9 = document.createElement('div');
+		let newElement10 = document.createElement('div');
+
+		let newParagraph0 = document.createElement('p');
+		let newParagraph1= document.createElement('p');
+		let newParagraph2 = document.createElement('p');
+		let newParagraph3 = document.createElement('p');
+		let newParagraph4 = document.createElement('p');
+
+		let newInput0 = document.createElement('input');
+		newInput0.id = "0";
+		newInput0.value = "true";
+		newInput0.classList = "sp";
+		newInput0.type= "submit";
+		newInput0.name= "zero";
+
+
+		let newInput1 = document.createElement('input');
+		newInput1.id = "1";
+		newInput1.value = "true";
+		newInput1.classList = "sp";
+		newInput1.type= "submit";
+		newInput1.name= "one";
+
+
+		let newInput2 = document.createElement('input');
+		newInput2.id = "2";
+		newInput2.value = "true";
+		newInput2.classList = "sp";
+		newInput2.type= "submit";
+		newInput2.name= "two";
+
+
+		let newInput3 = document.createElement('input');
+		newInput3.id = "3";
+		newInput3.value = "true";
+		newInput3.classList = "sp";
+		newInput3.type= "submit";
+		newInput3.name= "three";
+
+
+		let newInput4 = document.createElement('input');
+		newInput4.id = "4";
+		newInput4.value = "false";
+		newInput4.classList = "sp";
+		newInput4.type= "submit";
+		newInput4.name= "four";
+
+
+		let newInput5 = document.createElement('input');
+		newInput5.id = "5";
+		newInput5.value = "Vrai";
+		newInput5.type= "submit";
+		newInput5.name= "five";
+
+
+		let newInput6 = document.createElement('input');
+		newInput6.id = "6";
+		newInput6.value = "Vrai";
+		newInput6.type= "submit";
+		newInput6.name= "six";
+
+
+		let newInput7 = document.createElement('input');
+		newInput7.id = "7";
+		newInput7.value = "Faux";
+		newInput7.type= "submit";
+		newInput7.name= "seven";
+
+		let newInput8 = document.createElement('input');
+		newInput8.id = "8";
+		newInput8.value = "Vrai";
+		newInput8.name= "eight";
+
+
+		let newInput9 = document.createElement('input');
+		newInput9.id = "9";
+		newInput9.value = "Faux";
+		newInput9.type= "submit";
+		newInput9.name= "nine";
+
+
+		let newInput10 = document.createElement('input');
+		newInput10.id = "10";
+		newInput10.value = "false";
+		newInput10.classList = "sp";
+		newInput10.type= "submit";
+		newInput10.name= "ten";
+
+
+		let newInput11 = document.createElement('input');
+		newInput11.id = "11";
+		newInput11.value = "false";
+		newInput11.classList = "sp";
+		newInput11.type= "submit";
+		newInput11.name= "eleven";
+
+
+		let newInput12 = document.createElement('input');
+		newInput12.id = "12";
+		newInput12.value = "false";
+		newInput12.classList = "sp";
+		newInput12.type= "submit";
+		newInput12.name= "twelve";
+
+
+		let newInput13 = document.createElement('input');
+		newInput13.id = "13";
+		newInput13.value = "false";
+		newInput13.classList = "sp";
+		newInput13.type= "submit";
+		newInput13.name= "thirteen";
+
+
+		let newInput14 = document.createElement('input');
+		newInput14.id = "14";
+		newInput14.value = "true";
+		newInput14.classList = "sp";
+		newInput14.type= "submit";
+		newInput14.name= "fourteen";
+
+
+		let newInput15 = document.createElement('input');
+		newInput15.id = "15";
+		newInput15.value = "Faux";
+		newInput15.type= "submit";
+		newInput15.name= "fifthteen";
+
+
+		let newInput16 = document.createElement('input');
+		newInput16.id = "16";
+		newInput16.value = "Vrai";
+		newInput16.type= "submit";
+		newInput16.name= "sixteen";
+
+
+		let newInput17 = document.createElement('input');
+		newInput17.id = "17";
+		newInput17.value = "Faux";
+		newInput17.type= "submit";
+		newInput17.name= "seventeen";
+
+
+		let newInput18 = document.createElement('input');
+		newInput18.id = "18";
+		newInput18.value = "Vrai";
+		newInput18.type= "submit";
+		newInput18.name= "eighteen";
+
+
+		let newInput19 = document.createElement('input');
+		newInput19.id = "19";
+		newInput19.value = "Faux";
+		newInput19.type= "submit";
+		newInput19.name= "nineteen";
+
+
+		let newInput20 = document.createElement('input');
+		newInput20.id = "20";
+		newInput20.value = "Vrai";
+		newInput20.type= "submit";
+		newInput20.name= "twenty";
+
+		// let newLabel0 = document.createElement('label');
+		// let newLabel1 = document.createElement('label');
+		// let newLabel2 = document.createElement('label');
+		// let newLabel3 = document.createElement('label');
+		// let newLabel4 = document.createElement('label');
+		// let newLabel5 = document.createElement('label');
+		// let newLabel6 = document.createElement('label');
+		// let newLabel7 = document.createElement('label');
+		// let newLabel8 = document.createElement('label');
+		// let newLabel9 = document.createElement('label');
+		// let newLabel10 = document.createElement('label');
+		// let newLabel11 = document.createElement('label');
+		// let newLabel12 = document.createElement('label');
+		// let newLabel13 = document.createElement('label');
+		// let newLabel14 = document.createElement('label');
+		// let newLabel15 = document.createElement('label');
+		// let newLabel16 = document.createElement('label');
+		// let newLabel17 = document.createElement('label');
+		// let newLabel18 = document.createElement('label');
+		// let newLabel19 = document.createElement('label');
+		// let newLabel20 = document.createElement('label');
+
+		document.body.appendChild(newTitle);
+		newTitle.innerHTML = "HTML Questionnaire";
+		document.body.appendChild(newForm);     
+
+		newForm.appendChild(newElement0);
+		newForm.appendChild(newElement1);
+		newForm.appendChild(newElement2);
+		newForm.appendChild(newElement3);
+		newForm.appendChild(newElement4);
+
+		newElement0.appendChild(newParagraph0);
+		newElement1.appendChild(newParagraph1);
+		newElement2.appendChild(newParagraph2);
+		newElement3.appendChild(newParagraph3);
+		newElement4.appendChild(newParagraph4);
+
+		newElement0.appendChild(newInput0);
+		newElement1.appendChild(newInput1);
+		newElement2.appendChild(newInput2);
+		newElement3.appendChild(newInput3);
+		newElement4.appendChild(newInput4);
+		newElement5.appendChild(newInput5);
+		newElement6.appendChild(newInput6);
+		newElement7.appendChild(newInput7);
+		newElement8.appendChild(newInput8);
+		newElement9.appendChild(newInput9);
+
+		newElement0.appendChild(newInput10);
+		newElement1.appendChild(newInput11);
+		newElement2.appendChild(newInput12);
+		newElement3.appendChild(newInput13);
+		newElement4.appendChild(newInput14);
+		newElement5.appendChild(newInput15);
+		newElement6.appendChild(newInput16);
+		newElement7.appendChild(newInput17);
+		newElement8.appendChild(newInput18);
+		newElement9.appendChild(newInput19);
+		newElement10.appendChild(newInput20);
+
+		// newParagraph0.appendChild(newLabel0);
+		// newParagraph1.appendChild(newLabel1);
+		// newParagraph2.appendChild(newLabel2);
+		// newParagraph3.appendChild(newLabel3);
+		// newParagraph4.appendChild(newLabel4);
+
+		// newElement0.appendChild(newLabel10);
+		// newElement1.appendChild(newLabel11);
+		// newElement2.appendChild(newLabel12);
+		// newElement3.appendChild(newLabel13);
+		// newElement4.appendChild(newLabel14);
+		// newElement5.appendChild(newLabel15);
+		// newElement6.appendChild(newLabel16);
+		// newElement7.appendChild(newLabel17);
+		// newElement8.appendChild(newLabel18);
+		// newElement9.appendChild(newLabel19);
+		// newElement10.appendChild(newLabel20);
+
+		// newLabel0.setAttribute('for', 'right');
+		// newLabel1.setAttribute('for', 'right');
+		// newLabel2.setAttribute('for', 'wrong');
+		// newLabel3.setAttribute('for', 'wrong');
+		// newLabel4.setAttribute('for', 'right');
+		// newLabel5.setAttribute('for', 'right');
+		// newLabel6.setAttribute('for', 'wrong');
+		// newLabel7.setAttribute('for', 'wrong');
+		// newLabel8.setAttribute('for', 'right');
+		// newLabel9.setAttribute('for', 'right');
+		// newLabel10.setAttribute('for', 'wrong');
+		// newLabel11.setAttribute('for', 'wrong');
+		// newLabel12.setAttribute('for', 'right');
+		// newLabel13.setAttribute('for', 'right');
+		// newLabel14.setAttribute('for', 'wrong');
+		// newLabel15.setAttribute('for', 'wrong');
+		// newLabel16.setAttribute('for', 'right');
+		// newLabel17.setAttribute('for', 'right');
+		// newLabel18.setAttribute('for', 'wrong');
+		// newLabel19.setAttribute('for', 'wrong');
+
+		// newInput0.setAttribute('type', 'submit');
+		// newInput1.setAttribute('type', 'submit');
+		// newInput2.setAttribute('type', 'submit');
+		// newInput3.setAttribute('type', 'submit');
+		// newInput4.setAttribute('type', 'submit');
+		// newInput5.setAttribute('type', 'submit');
+		// newInput6.setAttribute('type', 'submit');
+		// newInput7.setAttribute('type', 'submit');
+		// newInput8.setAttribute('type', 'submit');
+		// newInput9.setAttribute('type', 'submit');
+		// newInput10.setAttribute('type', 'submit');
+		// newInput11.setAttribute('type', 'submit');
+		// newInput12.setAttribute('type', 'submit');
+		// newInput13.setAttribute('type', 'submit');
+		// newInput14.setAttribute('type', 'submit');
+		// newInput15.setAttribute('type', 'submit');
+		// newInput16.setAttribute('type', 'submit');
+		// newInput17.setAttribute('type', 'submit');
+		// newInput18.setAttribute('type', 'submit');
+		// newInput19.setAttribute('type', 'submit');
+		// newInput20.setAttribute('type', 'submit');
+
+		// newInput0.setAttribute('name', 'one');
+		// newInput1.setAttribute('name', 'two');
+		// newInput2.setAttribute('name', 'three');
+		// newInput3.setAttribute('name', 'four');
+		// newInput4.setAttribute('name', 'five');
+		// newInput5.setAttribute('name', 'one');
+		// newInput6.setAttribute('name', 'two');
+		// newInput7.setAttribute('name', 'three');
+		// newInput8.setAttribute('name', 'four');
+		// newInput9.setAttribute('name', 'five');
+		// newInput10.setAttribute('name', 'one');
+		// newInput11.setAttribute('name', 'two');
+		// newInput12.setAttribute('name', 'three');
+		// newInput13.setAttribute('name', 'four');
+		// newInput14.setAttribute('name', 'five');
+		// newInput15.setAttribute('name', 'one');
+		// newInput16.setAttribute('name', 'two');
+		// newInput17.setAttribute('name', 'three');
+		// newInput18.setAttribute('name', 'four');
+		// newInput20.setAttribute('name', 'five');
+
+		newParagraph0.innerHTML = "La norme HTML5 ne nécessite pas de guillemets autour des valeurs d'attribut.";
+
+		newParagraph1.innerHTML = "L'élément &lt;div&gt; est un élément non sémantique.";
+
+		newParagraph2.innerHTML = "Les éléments en ligne sont normalement affichés sans commencer une nouvelle ligne.";
+
+		newParagraph3.innerHTML = "Un &lt;iframe&gt; est utilisé pour afficher une page Web dans une page Web.";
+
+		newParagraph4.innerHTML = "Les commentaires HTML commencent par <- et se terminent par ->";
+
+		let finalButton = document.createElement('input')
+			finalButton.type="submit";
+			finalButton.id = "btn";
+		document.body.appendChild(finalButton);
+
+
+		// xhr_object = new XMLHttpRequest(); 
+	 
+		// xhr_object.open("GET", "data.json", true); 
+	 
+		// xhr_object.playerAnswer = function() { 
+		//    if(xhr_object.readyState == 4) alert(xhr_object.responseText); 
+		// } 
+		 
+		// xhr_object.send(null); 
+
+// 			function finalResult() {
+// 			let finalScore = 0;
+// 			let correctResult = [true, true, true, true, false];
+// 			let playerAnswer = document.getElementsByClassName("sp");
+// 			for (i = 0; i <= questionnaire.length; i++) {
+//   			if (playerAnswer[0] === questionnaire[0].reponse);
+// 			  console.log(questionnaire[0].argument);
+// 			}
+// 			};
+// 			finalResult();
 </script>
 </body>
 </html>
