@@ -6,19 +6,17 @@ h1 {
 	text-align: center;
 }
 
-#quiz {
+form {
 	margin-left: 10px;
 	background: #d2def2;
 	padding: 10px 20px 10px 20px;
 	width: 800px;
 	border-radius: 20px;
 	float: left;
-	
 }
 
 input {
-	margin-bottom: 20px;
-	display: block;
+	margin: 20px 10px 20px 10px;
 }
 
 #textbox {
@@ -31,13 +29,14 @@ input {
 
 
 #button {
+	display: block;
 	background: green;
+	width: 150px;
+	height: 75px;
 	border: none;
-	border-radius: 5px;
-	padding: 10px;
+	border-radius: 45px;
 	color: white;
 	font-size: 16px;
-	transition-duration: .5s;
 	margin-top: 15px;
 }
 
@@ -51,7 +50,7 @@ input {
 	
 }
 
-#after_submit {
+#submitAfter {
 	visibility: hidden;
 	background: #ff5459;
 	padding: 10px 20px 10px 20px;
@@ -62,6 +61,6 @@ input {
 	font-size: 20px;
 }
 
-#sp {
-	display: inline;
-} 
+/* #sp {
+	margin: 24px;
+}  */
