@@ -1,47 +1,15 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Questionnaire!</title>
+    <title>Questionnaire</title>
     <link href ="style.css" rel ="stylesheet">
     <script src = "main.js"></script>
 </head>
 
 
-<body>
-    <h1>HTML Questionnaire</h1>
-    
-    <form id = "quiz" name = "quiz">
-        
-        <p class = "questions">La norme HTML5 ne nécessite pas de guillemets autour des valeurs d'attribut.</p>
-        <input type = "radio" id = "sp" name = "question1" value = "true"> Vrai<br>
-        <input type = "radio" id = "sp" name = "question1" value = "false"> Faux<br>
-        
-        <p class = "questions">L'élément &lt;div&gt; est un élément non sémantique.</p>
-        <input type = "radio" id = "sp" name = "question2" value = "true"> Vrai<br>
-        <input type = "radio" id = "sp" name = "question2" value = "false"> Faux<br>
-        
-        <p class = "questions">Les éléments en ligne sont normalement affichés sans commencer une nouvelle ligne.</p>
-        <input type = "radio" id = "sp" name = "question3" value = "true"> Vrai<br>
-        <input type = "radio" id = "sp" name = "question3" value = "false">Faux<br>
-        
-        <p class = "questions">Un &lt;iframe&gt; est utilisé pour afficher une page Web dans une page Web.</p>
-        
-        <input type = "radio" id = "sp" name = "question4" value = "true"> Vrai<br>
-        <input type = "radio" id = "sp" name = "question4" value = "false">Faux<br>
-        
-        <p class = "questions">L'élément &lt;body&gt; représente le contenu principal du document HTML.</p>
-        
-        <input type = "radio" id = "sp" name = "question5" value = "true"> Vrai<br>
-        <input type = "radio" id = "sp" name = "question5" value = "false">Faux<br>
-        
-        <input id = "button" type = "button" value = "Voir resultat" onclick = "check();">
-        
-    </form>
-    
-    <div id = "after_submit">
-        <p id = "number_correct"></p>
-        <p id = "message"></p>
-    </div>
+<body onload="makeForm()">
+    <div class="container"></div>
 </body>
+
 </html>
